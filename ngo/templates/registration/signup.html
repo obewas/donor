@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Sign up</h2>
+  <p class="lead">Select below the type of account you want to create</p>
+  <a href="{% url 'ngo_signup' %}" class="btn btn-ngo btn-lg" role="button">I'm a Charity Orgn</a>
+  <a href="{% url 'donor_signup' %}" class="btn btn-donor btn-lg" role="button">I'm a Donor</a>
+  <a href="{% url 'donor_signup' %}" class="btn btn-donor btn-lg" role="button">I'm a Admin</a>
+{% endblock %}
